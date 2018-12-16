@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Github_EStore:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Github_EStore_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Github_EStore/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Github_EStore" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="C3P0" />
+          <element id="library" level="application" name="DBUtils" />
+          <element id="library" level="application" name="Gson" />
+          <element id="library" level="application" name="JSTL" />
+          <element id="library" level="application" name="Junit" />
+          <element id="library" level="application" name="MySQL" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
