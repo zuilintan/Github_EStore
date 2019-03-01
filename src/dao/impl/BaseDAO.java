@@ -1,20 +1,19 @@
 package dao.impl;
 
+import dao.Dao;
+import db.JDBCUtils;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
+import utils.ReflectionUtils;
+import web.ConnectionContext;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.List;
-
-import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.BeanHandler;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.ScalarHandler;
-
-import dao.Dao;
-import db.JDBCUtils;
-import utils.ReflectionUtils;
-import web.ConnectionContext;
 
 public class BaseDAO<T> implements Dao<T> {
 
